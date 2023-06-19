@@ -10,7 +10,7 @@
 .image-container {
   margin-top: 3vw;
   /* max-width: 215px; /* Размер исходного изображения */ */
-  height: auto;heightheightheightheightheightheightheightheightheight
+  height: auto;heightheightheightheightheightheightheightheightheightheight
 }
 
 .image-container2 {
@@ -54,9 +54,13 @@
   font-size: 2rem;
   letter-spacing: -0.07em;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .text {
+
   margin-top: -36.667vw;
   margin-left: 54.167vw;
 }
