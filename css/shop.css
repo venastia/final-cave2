@@ -1,0 +1,103 @@
+.image-container, .image-container2 {
+  width: 30%;
+  height: 35.595vw;
+  position: relative;
+}
+.image-container2 {
+  width: 49%;
+}
+
+.image-container {
+  margin-top: 3vw;
+  /* max-width: 215px; /* Размер исходного изображения */ */
+  height: auto;heightheightheightheightheightheightheightheightheight
+}
+
+.image-container2 {
+  margin-top: 2.976vw;
+  left: 47.619vw;
+}
+
+.gallery-image, .gallery-image2 {
+  transition: -webkit-clip-path 1s ease-in-out;
+  transition: clip-path 1s ease-in-out;
+  transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+.gallery-image {
+  -webkit-clip-path: url(#mask1);
+  clip-path: url(#mask1);
+}
+
+.image-container:hover .gallery-image {
+  -webkit-clip-path: url(#mask2);
+  clip-path: url(#mask2);
+  filter: blur(0);
+}
+
+.gallery-image2 {
+  -webkit-clip-path: url(#mask3);
+  clip-path: url(#mask3);
+}
+
+.image-container2:hover .gallery-image2 {
+  -webkit-clip-path: url(#mask4);
+  clip-path: url(#mask4);
+  filter: blur(0);
+}
+
+.text, .text2 {
+  position: absolute;
+  width: 19.821vw;
+  font-size: 2rem;
+  letter-spacing: -0.07em;
+  color: white;
+}
+
+.text {
+  margin-top: -36.667vw;
+  margin-left: 54.167vw;
+}
+
+.text2 {
+  margin-top: -29.762vw;
+  margin-left: -47.619vw;
+  width: 19.821vw;
+}
+
+.price {
+  position: absolute;
+  top: 2.1vh;
+  left: 13.095vw;
+}
+
+.description {
+  margin-top: 9.524vw;
+}
+
+.wrapper1 img, .wrapper2 img {
+  position: absolute;
+  top: 14.167vw;
+  cursor: url('../cursor3.png') 32 32, auto;
+}
+
+.caption, .caption2 {
+  font-size: 2rem;
+  letter-spacing: -0.07em;
+  color: white;
+  margin-top: 2.1vh;
+}
+
+.caption2 {
+  margin-left: 40.476vw;
+  width: 5.952vw;
+}
+
+.caption.hidden {
+  display: none;
+}
+.logo {
+  top: 50vh;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAVE</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/events.css" rel="stylesheet" />
+ <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="menu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="62" height="35" viewBox="0 0 62 35" fill="none">
+    <path d="M0 35V0H26.4792L62 35H0Z" fill="#FFFFFF"/>
+    </svg>
+    <img src="" alt="">
+    <a class="" href="index.html">
+      <h1>projects</h1>
+    </a>
+    <a class="" href="events.html">
+      <h1>events</h1>
+    </a>
+    <a class="" href="book.html">
+      <h1>book</h1>
+    </a>
+    <a class="" href="shop.html">
+      <h1>shop</h1>
+    </a>
+    <a class="" href="closer.html">
+      <h1>come closer</h1>
+    </a>
+    <a class="" href="build.html">
+      <h1>build game</h1>
+    </a>
+  </div>
+  <div class="carousel" id="carousel" onclick="rotateImages()">
+    <img src="p_1.png">
+    <img src="p_2.png">
+    <img src="p_3.png">
+    <img src="p_4.png">
+    <img src="p_5.png">
+    <img src="p_6.png">
+    <img src="p_7.png">
+    <img src="p_8.png">
+    <img src="p_9.png">
+    <img src="p_10.png" >
+    <img src="p_11.png" >
+    <img src="p_12.png" >
+    <img src="p_13.png" >
+    <img src="p_14.png" >
+    <img src="p_15.png" >
+    <img src="p_16.png" >
+    <img src="p_17.png" >
+    <img src="p_18.png" >
+    <img src="p_19.png" >
+    <img src="p_20.png" >
+    <img src="p_21.png" >
+    <img src="p_22.png" >
+    <img src="p_23.png" >
+    <img src="p_1.png">
+    <img src="p_2.png">
+    <img src="p_3.png">
+    <img src="p_4.png">
+    <img src="p_5.png">
+    <img src="p_6.png">
+    <img src="p_7.png">
+    <img src="p_8.png">
+    <img src="p_9.png">
+    <img src="p_10.png" >
+    <img src="p_11.png" >
+    <img src="p_12.png" >
+    <img src="p_13.png" >
+    <img src="p_14.png" >
+    <img src="p_15.png" >
+    <img src="p_16.png" >
+    <img src="p_17.png" >
+    <img src="p_18.png" >
+    <img src="p_19.png" >
+    <img src="p_20.png" >
+    <img src="p_21.png" >
+    <img src="p_22.png" >
+    <img src="p_23.png" >
+  </div>
+
+  <div class="caption">
+    <p id="captionText">City architecture lection, Daa Wuu</p>
+  </div>
+
+
+
+  <div class="bottom_line"></div>
+  <div class="bottom">
+     <p> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the </p>
+    <img src="logo.svg" alt="">
+    <h1>designed and made by nastia vedeniapina</h1>
+  </div>
+
+<script type="text/javascript">
+const carousel = document.querySelector('#carousel');
+const images = Array.from(carousel.children);
+const captionText = document.querySelector('#captionText');
+
+let counter = 0;
+
+// Initial positions
+images.forEach((image, i) => {
+  gsap.set(image, {
+    x: (i - counter) * 520, // 500px image width + 20px gap
+    filter: `blur(${Math.abs(i - counter) * 2}px)`
+  });
+});
+
+function rotateImages() {
+  // Increase counter and check if it goes beyond the length of images
+  counter = (counter + 1 >= images.length) ? 0 : counter + 1;
+
+  // Update the positions of all images
+  images.forEach((image, i) => {
+    // Calculate new x position
+    let newX = (i - counter) * 520; // 500px image width + 20px gap
+
+    // Move the image to the new position
+    gsap.to(image, {
+      duration: 1,
+      x: newX,
+      filter: `blur(${Math.abs(i - counter) * 2}px)`,
+      ease: "power1.out", // Use ease to make the animation smoother
+    });
+  });
+
+  // Update caption text based on the current image
+  captionText.innerText = imageCaptions[counter];
+}
+
+const imageCaptions = [
+  "City architecture: Rome, Daa Wuu",
+  "City architecture: Riga, Daa Wuu",
+  "How to transform your routine (1), Doo Shuu",
+  "How to transform your routine (3), Doo Shuu",
+  "Cave Land Festival",
+  "Cave Land Festival",
+  "Cave Land Festival",
+  "Rare stones exhibition",
+  "Rare stones exhibition",
+  "From curve to straight: drawing class",
+  "From curve to straight: drawing class",
+  "From curve to straight: drawing class",
+  "Block 14/21",
+  "Block 48",
+  "Fair(y) wood x CoWood",
+  "Fair(y) wood x CoWood",
+  "Fair(y) wood x CoWood",
+  "Brunch with floristic bureau",
+  "Brunch with floristic bureau",
+  "Brunch with floristic bureau",
+  "Primi conversation",
+  "Primi conversation",
+  "Primi conversation",
+  "City architecture: Rome, Daa Wuu",
+  "City architecture: Riga, Daa Wuu",
+  "How to transform your routine (1), Doo Shuu",
+  "How to transform your routine (3), Doo Shuu",
+  "Cave Land Festival",
+  "Cave Land Festival",
+  "Cave Land Festival",
+  "Rare stones exhibition",
+  "Rare stones exhibition",
+  "From curve to straight: drawing class",
+  "From curve to straight: drawing class",
+  "From curve to straight: drawing class",
+  "Block 14/21",
+  "Block 48",
+  "Fair(y) wood x CoWood",
+  "Fair(y) wood x CoWood",
+  "Fair(y) wood x CoWood",
+  "Brunch with floristic bureau",
+  "Brunch with floristic bureau",
+  "Brunch with floristic bureau",
+  "Primi conversation",
+  "Primi conversation",
+  "Primi conversation",
+];
+
+carousel.onclick = rotateImages;
+
+
+
+</script>
+</body>

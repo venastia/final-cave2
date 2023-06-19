@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAVE</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/book.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+
+</head>
+<body>
+  <div class="menu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="62" height="35" viewBox="0 0 62 35" fill="none">
+    <path d="M0 35V0H26.4792L62 35H0Z" fill="#FFFFFF"/>
+    </svg>
+    <img src="" alt="">
+    <a class="" href="index.html">
+      <h1>projects</h1>
+    </a>
+    <a class="" href="events.html">
+      <h1>events</h1>
+    </a>
+    <a class="" href="book.html">
+      <h1>book</h1>
+    </a>
+    <a class="" href="shop.html">
+      <h1>shop</h1>
+    </a>
+    <a class="" href="closer.html">
+      <h1>come closer</h1>
+    </a>
+    <a class="" href="build.html">
+      <h1>build game</h1>
+    </a>
+  </div>
+  <div class="image-stack">
+      <img src="b_1.png">
+      <img src="b_2.png">
+      <img src="b_3.png">
+      <img src="b_4.png">
+      <img src="b_5.png">
+      <img src="b_6.png">
+      <img src="b_7.png">
+      <img src="b_8.png">
+      <img src="b_9.png">
+      <img src="b_10.png">
+    </div>
+
+    <div class="bottom_line"></div>
+    <div class="bottom">
+       <p> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the </p>
+      <img src="logo.svg" alt="">
+      <h1>designed and made by nastia vedeniapina</h1>
+    </div>
+<script>
+// Get all images and convert to array
+const images = Array.from(document.querySelectorAll('.image-stack img'));
+
+// Shuffle the images array
+for (let i = images.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [images[i], images[j]] = [images[j], images[i]]; // ES6 destructuring assignment
+}
+
+// Apply z-index in order of shuffled array
+images.forEach((img, i) => {
+  img.style.zIndex = i;
+});
+
+// Add click event listener to each image
+images.forEach((img) => {
+  img.addEventListener('click', function() {
+    // Push the clicked image to the back
+    this.style.zIndex = Math.min(...images.map(img => parseInt(img.style.zIndex))) - 1;
+  });
+});
+
+// Add click event listener to each image and randomize position
+images.forEach((img) => {
+  // Generate random x and y offsets (change these values to suit your site)
+  const xOffset = Math.floor(Math.random() * 50) - 25;
+  const yOffset = Math.floor(Math.random() * 50) - 25;
+
+  // Apply offsets
+  img.style.top = `calc(50% + ${yOffset}px)`;
+  img.style.left = `calc(50% + ${xOffset}px)`;
+
+  // Add a random rotation to some images (here, roughly 50% chance)
+  if (Math.random() > 0.5) {
+    const rotation = Math.floor(Math.random() * 20) - 10; // random rotation between -10 and +10 degrees
+    img.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+  } else {
+    img.style.transform = 'translate(-50%, -50%)';
+  }
+
+  img.addEventListener('click', function() {
+    this.style.zIndex = -1;
+  });
+});
+
+</script>
+
+</body>
+  </html>

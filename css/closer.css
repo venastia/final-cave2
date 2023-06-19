@@ -1,0 +1,376 @@
+
+/* общие свойства */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    font-family: 'ApercuPro-Regular', sans-serif;
+  background-color: #11112B;
+
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  padding: 0px;
+}
+p, h2, h1 {
+  font-weight: normal;
+  color: #11112B;
+}
+p {
+  font-size: 1.11vw;
+  line-height: 1.39vw;
+}
+h1 {
+  font-size: 10.97vw;
+  line-height: 14.03vw;
+}
+h2 {
+  font-size: 2.22vw;
+  line-height: 2.85vw;
+}
+.tophouses, .bottomhouses, .footer_text {
+  display: flex;
+}
+.firstblock, .logo, .thirdblock, .footer, .footer_text {
+  width: 100%;
+}
+/* первый блок */
+.firstblock {
+  display: block;
+  overflow: hidden;
+}
+/* внутренние блоки */
+.tophouses, .bottomhouses {
+  width: 252.78vw;
+  padding: 2.08vw;
+  align-items: center;
+  animation-play-state: running;
+}
+.firstblock p, .firstblock h2 {
+  opacity: 0;
+}
+/* первый ряд построек */
+.tophouses {
+  animation: tophouses-move 4s linear infinite;
+}
+/* второй ряд построек */
+.bottomhouses {
+  animation: bottomhouses-move 4s linear infinite;
+}
+.tophouses:hover, .bottomhouses:hover {
+  animation-play-state: paused;
+}
+/* карточки построек */
+.XXL, .NYC, .Intimate, .WTF, .A, .Acorn, .Socrate, .Bungalow {
+  position: relative;
+  background-color: #F3F3F3;
+  width: 30.49vw;
+  height: 30.49vw;
+  border-radius: 1.81vw;
+  margin-left: 1.11vw;
+  padding-left: 2.29vw;
+  padding-top: 1.88vw;
+  background-size: 102%;
+  background-position: center;
+}
+.WTF:hover, .Acorn:hover, .Socrate:hover, .Bungalow:hover, .A:hover, .NYC:hover, .Intimate:hover, .XXL:hover, .WTF:hover{
+  background-color: #AED9F4;
+  transition: all .3s;
+  background-size: 102%;
+  background-position: center;
+}
+.Socrate {
+  background-image: url('../images/Socrates.svg');
+}
+.Acorn {
+  background-image: url('../images/acorn.svg');
+}
+.Bungalow {
+  background-image: url('../images/bungalow.svg');
+  background-size: 103%;
+}
+.A {
+  background-image: url('../images/A.svg');
+}
+.NYC {
+  background-image: url('../images/NYC.svg');
+}
+.Intimate {
+  background-image: url('../images/intimate.svg');
+}
+.XXL {
+  background-image: url('../images/XXL.svg');
+}
+.WTF {
+  background-image: url('../images/WTF.svg');
+}
+.WTF:hover p, .Acorn:hover p, .Socrate:hover p, .Bungalow:hover p, .A:hover p, .NYC:hover p, .Intimate:hover p, .XXL:hover p, .WTF:hover p {
+  opacity: 1;
+  transition: all .3s;
+}
+.WTF:hover h2, .Acorn:hover h2, .Socrate:hover h2, .Bungalow:hover h2, .A:hover h2, .NYC:hover h2, .Intimate:hover h2, .XXL:hover h2, .WTF:hover h2 {
+  opacity: 1;
+  transition: all .3s;
+}
+/* лого */
+.logo {
+  height: 19.17vw;
+  text-align: center;
+}
+.logo1 {
+  width: 62.08vw;
+  height: 19.17vw;
+}
+
+
+/* второй блок */
+.secondblock, .plan {
+  position: relative;
+}
+.dining, .sleeping, .working, .living, .washing, .stairs, .stone1 {
+  position: absolute;
+}
+.dining:hover, .sleeping:hover, .working:hover, .living:hover, .washing:hover, .stairs:hover {
+  opacity: 0;
+  transition: all .3s;
+}
+.secondblock {
+  overflow: hidden;
+  padding-top: 3.47vw;
+  text-align: center;
+}
+.secondblock h2 {
+  display: none;
+}
+.plan {
+  width: 87vw;
+  height: 142.92vw;
+}
+.dining {
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0, 60% 100%, 0 100%);
+  margin-left: -86.79vw;
+  width: 49.10vw;
+  height: 39.79vw;
+  margin-top: 0.1vw;
+  text-align: center;
+}
+.sleeping {
+  -webkit-clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
+  clip-path: polygon(38% 0, 0 61%, 48% 100%, 100% 53%, 100% 0);
+  margin-left: -48.26vw;
+  width: 48.26vw;
+  height: 62.15vw;
+  margin-top: 0.1vw;
+  text-align: center;
+}
+.working {
+  -webkit-clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
+  clip-path: polygon(0 0, 0 100%, 37% 100%, 100% 34%, 76% 0);
+  margin-left: -86.79vw;
+  margin-top: 38.96vw;
+  width: 38.47vw;
+  height: 30vw;
+  text-align: center;
+}
+.living {
+  -webkit-clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
+  clip-path: polygon(94% 0%, 64% 32%, 100% 52%, 100% 78%, 86% 84%, 86% 100%, 0 100%, 0 76%, 22% 76%, 22% 58%, 60% 42%, 45% 34%, 77% 0);
+  margin-left: -87.01vw;
+  margin-top: 0vw;
+  width: 62.50vw;
+  height: 117.50vw;
+  margin-top: 0.1vw;
+  text-align: center;
+}
+.washing {
+  -webkit-clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0%, 26% 0, 0% 25%, 0% 100%, 100% 100%);
+  margin-left: -34.31vw;
+  margin-top: 90.79vw;
+  width: 34.31vw;
+  height: 26.67vw;
+  text-align: center;
+}
+.stairs {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 9%);
+  margin-left: -87.4vw;
+  margin-top: 116.60vw;
+  width: 61vw;
+  height: 26.32vw;
+  text-align: center;
+}
+/* камень */
+.stone1 {
+  margin-left: -18vw;
+  margin-top: 34.51vw;
+  width: 25.69vw;
+  height: 50.69vw;
+}
+
+
+/* третий блок */
+.thirdblock {
+  padding-top: 3.47vw;
+  width: 100vw;
+  height: 85vw;
+}
+.values, .thirdblock {
+  overflow: hidden;
+}
+/* картинки */
+.house, .people, .heart, .flame {
+  width: 39.51vw;
+  height: 38.68vw;
+  border-radius: 1.81vw;
+  display: inline-block;
+  position: relative;
+  animation: blink .4s steps(1) alternate infinite;
+  animation-play-state: running;
+  background-color: #F3F3F3;
+  margin-right: 1.11vw;
+  margin-top: 1.11vw;
+  background-size: auto 100%;
+}
+.house {
+  background-image: url("../images/housesprint.svg");
+  margin-left: -1.53vw;
+}
+.people {
+  background-image: url("../images/peoplesprint.svg");
+}
+.heart {
+  background-image: url("../images/heartsprint.svg");
+  margin-left: -1.53vw;
+}
+.flame {
+  background-image: url("../images/flamesprint.svg");
+}
+/* текст */
+.values {
+  position: absolute;
+  width: 78.47vw;
+  height: 19.58vw;
+  left: 50vw;
+  margin-top: -49vw;
+  margin-left: 1.11vw;
+  border-radius: 0vw 0vw 1.81vw 1.81vw;
+  background-color: #F3F3F3;
+  transform: rotate(90deg);
+}
+.values h1 {
+  width: 280.14027777778vw;
+  margin-top: 2.22vw;
+  animation: values-move 7s reverse linear infinite;
+}
+.coloredvalues {
+  color: #E84A0F;
+}
+.cards1, .cards2 {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.house_value, .people_value, .heart_value, .flame_value {
+  position: absolute;
+  display: inline-block;
+  width: 39.51vw;
+  height: 38.68vw;
+  border-radius: 1.81vw;
+  background: #AED9F4;
+  background-size: 100%;
+  opacity: 0;
+  text-align: center;
+}
+.people_value:hover, .house_value:hover, .heart_value:hover, .flame_value:hover {
+  opacity: 1;
+  transition: all .2s;
+}
+.house_value h1, .people_value h1, .heart_value h1, .flame_value h1 {
+  line-height: 9.03vw;
+  margin-top: 13.19vw;
+}
+.people_value h1 {
+  margin-top: 8.89vw;
+}
+
+
+/* футер */
+.footer {
+  overflow: hidden;
+  padding-top: 3.47vw;
+}
+/* бегущая строка */
+.footer img {
+  width: 377.01vw;
+  align-items: center;
+  animation: footer-move 4s linear infinite;
+  animation-play-state: running;
+}
+/* подпись */
+.footer_text {
+  justify-content: space-between;
+  text-align: center;
+  padding: 3.47vw 3.47vw;
+}
+.footer p {
+  color: #F3F3F3;
+}
+.menu p {
+  font-family: "ApercuPro-Regular";
+  font-weight: 450;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: -0.085em;
+  color: #FFFFFF;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  margin: 50px 50px;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: url('../cursor.png') 32 32, auto;
+}
+a:active {
+  text-decoration: underline;
+}
+.menu h1 {
+  font-size: 4vh;
+  color: white;
+  line-height: normal;
+}
+/* анимации */
+@keyframes tophouses-move {
+  0% {margin-left: -126.39vw;}
+  100% {margin-left: 0vw;}
+}
+@keyframes bottomhouses-move {
+  0% {margin-left: -126.39vw;}
+  100% {margin-left: 0vw;}
+}
+@keyframes blink {
+  0% {background-position: 0 top;}
+  20% {background-position: 25% top;}
+  40% {background-position: 50% top;}
+  60% {background-position: 75% top;}
+  80% {background-position: 100% top;}
+  100% {background-position: 125% top;}
+}
+@keyframes values-move {
+  0% {margin-left: -204vw;}
+  100% {margin-left: 0vw;}
+}
+@keyframes footer-move {
+  0% {margin-left: -290vw;}
+  100% {margin-left: 0vw;}
+}
+}

@@ -1,0 +1,29 @@
+.caption p {
+  color: white;
+  font-family: "ApercuPro-Regular";
+  font-weight: 450;
+  font-style: normal;
+  font-size: 4rem;
+  letter-spacing: -0.085em;
+  width: 60vw;
+  margin-top: 4vh;
+}
+.carousel {
+position: relative;
+width: 92.857vw;
+height: 41.667vw;
+margin: 0;
+margin-top: 3vw;
+cursor: url('../cursor2.png') 32 32, auto;
+}
+.carousel img {
+position: absolute;
+width: 29.762vw;
+height: 41.667vw;
+}
+.carousel img {
+transition: filter 1s;
+}
+.carousel img {
+filter: blur(20px);
+}

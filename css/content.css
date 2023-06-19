@@ -1,0 +1,226 @@
+.image-container, .image-container2 {
+  width: 58.93vw;
+  cursor: pointer;
+  position: relative;
+}
+
+.image-container {
+  height: 59.8vh;
+  margin-top: 7vh;
+}
+
+.image-container2 {
+  height: 65vh;
+  margin-top: 9vw;
+  left: 36.31vw;
+}
+
+.gallery-image, .gallery-image2 {
+  transition: -webkit-clip-path 1s ease-in-out, clip-path 1s ease-in-out, filter 0.3s ease;
+  filter: blur(5px);
+}
+
+.gallery-image {
+  -webkit-clip-path: url(#mask1);
+  clip-path: url(#mask1);
+}
+
+.image-container:hover .gallery-image {
+  -webkit-clip-path: url(#mask2);
+  clip-path: url(#mask2);
+  cursor: url('../cursor2.png') 32 32, auto;
+  filter: blur(0);
+}
+
+.gallery-image2 {
+  -webkit-clip-path: url(#mask3);
+  clip-path: url(#mask3);
+}
+
+.image-container2:hover .gallery-image2 {
+  -webkit-clip-path: url(#mask4);
+  clip-path: url(#mask4);
+  cursor: url('../cursor2.png') 32 32, auto;
+  filter: blur(0);
+}
+
+.text, .text2 {
+  position: absolute;
+  margin-top: -12vh;
+  width: 28.93vw;
+}
+
+.text {
+  margin-left: 63.69vw;
+}
+
+.text2 {
+  margin-left: -36.31vw;
+}
+
+.text p, .text2 p {
+  font-size: 2rem;
+  letter-spacing: -0.07em;
+  color: white;
+}
+
+.order {
+  width: 12.56vw;
+  height: 7.3vh;
+  background-color: white;
+  display: block;
+  padding:1.5vh 3.1vw 1.5vh 3.57vw;
+  position: fixed;
+  bottom: 5vh;
+}
+
+.form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.form_content {
+  background-color: #fff;
+  margin: 2.3% auto;
+  padding: 3vh;
+  width: 64vw;
+  color: #101027;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.form h1, .order h1, .order a {
+  color: #101027;
+}
+
+.order a {
+  font-family: "ApercuPro-Regular";
+  font-weight: 450;
+  font-style: normal;
+  font-size: 4rem;
+  letter-spacing: -0.085em;
+}
+
+input[type="text"] {
+  position: relative;
+  width: 18vw;
+  border: none;
+  background: #fff;
+  border-bottom: 0.18vw solid #101027;
+  font-size: 2rem;
+  color: #101027;
+  padding-left: 0.6vw;
+  height:6vh;
+  outline: none;
+}
+
+input[type="text"]#more {
+  height: 1vh;
+  vertical-align: bottom;
+  padding-top: 0vw;
+}
+
+input[type="submit"] {
+  background-color: #101027;
+  color: white;
+  font-size: 4rem;
+  border: none;
+  letter-spacing: -0.085em;
+  cursor: url('../cursor3.png') 32 32, auto;
+  width: 30%;
+  padding: 1.6vh 2vw;
+  margin: 0.8vh 0;
+}
+
+.input-container, .input-container-vertical {
+  align-items: center;
+  margin-bottom: 1vh;
+  border-bottom: 2px solid #101027;
+}
+
+.input-container {
+  display: flex;
+  width: 70%;
+}
+
+.input-container-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-container label, .input-container input, textarea#more {
+  font-size: 4rem;
+  letter-spacing: -0.085em;
+  color: #101027;
+}
+
+.input-container label {
+  margin-right: 1vh;
+  color: #AED9F4;
+}
+
+.input-container input {
+  flex-grow: 1;
+  border: none;
+  background: #fff;
+}
+
+textarea#more {
+  width: 100%;
+  height: 8.929vw;
+  padding: 0.6vw 0vw;
+  resize: none;
+  outline: none;
+  border: none;
+  font-family: "ApercuPro-Regular";
+}
+
+.close-icon {
+  width: 3.988vw;
+  height: 3.988vw;
+  cursor: pointer;
+  fill: #101027;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#full_form {
+  margin-top: 7vw;
+  cursor: url('../cursor3.png') 32 32, auto;
+}
+
+body.form_open {
+  overflow: hidden;
+}
+
+#form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blur {
+  filter: blur(8px);
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.form h1 {
+  width: 60%;
+}
+.form svg {
+  cursor: url('../cursor3.png') 32 32, auto;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shop</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/shop.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+  <div class="menu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="62" height="35" viewBox="0 0 62 35" fill="none">
+    <path d="M0 35V0H26.4792L62 35H0Z" fill="#FFFFFF"/>
+    </svg>
+    <img src="" alt="">
+    <a class="" href="index.html">
+      <h1>projects</h1>
+    </a>
+    <a class="" href="events.html">
+      <h1>events</h1>
+    </a>
+    <a class="" href="book.html">
+      <h1>book</h1>
+    </a>
+    <a class="" href="shop.html">
+      <h1>shop</h1>
+    </a>
+    <a class="" href="closer.html">
+      <h1>come closer</h1>
+    </a>
+    <a class="" href="build.html">
+      <h1>build game</h1>
+    </a>
+  </div>
+<div class="wrapper1">
+  <div class="image-container">
+      <svg viewBox="0 0 214 298">
+        <defs>
+          <clipPath id="mask1">
+            <path d="M0 206.154L126.126 0H214.56V298H0V206.154Z"/>
+          </clipPath>
+          <clipPath id="mask2">
+            <path d="M0 0L253.946 0H432V601H0V0Z"/>
+          </clipPath>
+        </defs>
+        <image clip-path="url(#mask1)" xlink:href="i_1.svg" width="200" height="298" id="image" class="gallery-image"/>
+      </svg>
+      <div class="caption caption1">
+        <p>Cave candle <br>34$</p>
+      </div>
+  </div>
+  <div class="text" style="display: none;">
+    <h2>cave candle</h2>
+    <p class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness</p>
+    <p class="price">34$</p>
+    <img id="cart1" src="tocart.svg" alt="" onclick="changeImage1()" />
+  </div>
+
+</div>
+<div class="wrapper2">
+  <div class="image-container2">
+      <svg viewBox="0 0 479 298">
+        <defs>
+          <clipPath id="mask3">
+            <path d="M0 298L-1.3026e-05 3.91448e-05L176.081 3.1448e-05L176.081 153.515L364.425 153.515L364.425 2.32153e-05L479 1.8207e-05L479 298L0 298Z"/>
+          </clipPath>
+          <clipPath id="mask4">
+            <path d="M0 0H565.5H962V597H0V0Z"/>
+          </clipPath>
+        </defs>
+        <image clip-path="url(#mask3)" xlink:href="i_2.png" width="480" height="300" id="image" class="gallery-image2"/>
+        </svg>
+      <div class="caption caption2">
+        <p>Cave candle <br> 34$</p>
+      </div>
+      <div class="text2" style="display: none;">
+        <h2>cave candle</h2>
+        <p class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness</p>
+        <p class="price">34$</p>
+        <img id="cart2" src="tocart.svg" alt="" onclick="changeImage2()" />
+      </div>
+  </div>
+</div>
+
+<!-- <div class="wrapper1">
+  <div class="image-container">
+      <svg viewBox="0 0 215 300">
+        <defs>
+          <clipPath id="mask1">
+            <path d="M0 300L-1.31134e-05 8.9407e-06L79.0343 5.486e-06L79.0343 154.545L100.369 154.545L100.369 4.55345e-06L215 -4.57251e-07L215 300L0 300Z"/>
+          </clipPath>
+          <clipPath id="mask2">
+            <path d="M0 0L125.797 0H214V298H0V0Z"/>
+          </clipPath>
+        </defs>
+        <image clip-path="url(#mask1)" xlink:href="i_3.png" width="215" height="300" id="image" class="gallery-image"/>
+      </svg>
+      <div class="caption caption1">
+        <p>Cave candle <br>34$</p>
+      </div>
+  </div>
+  <div class="text" style="display: none;">
+    <h2>cave candle</h2>
+    <p class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness</p>
+    <p class="price">34$</p>
+    <img id="cart1" src="tocart.svg" alt="" onclick="changeImage1()" />
+  </div> -->
+
+
+
+
+
+
+
+
+</div>
+  <div class="bottom_line"></div>
+  <div class="bottom">
+     <p> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the </p>
+    <img class="logo" src="logo.svg" alt="">
+    <h1>designed and made by nastia vedeniapina</h1>
+  </div>
+
+<script>
+var wrappers1 = Array.from(document.getElementsByClassName('wrapper1'));
+var texts1 = Array.from(document.getElementsByClassName('text'));
+
+for (let i = 0; i < wrappers1.length; i++) {
+  let imageContainers = Array.from(wrappers1[i].getElementsByClassName('image-container'));
+  let images = Array.from(imageContainers[0].getElementsByClassName('gallery-image'));
+  let captions1 = Array.from(imageContainers[0].getElementsByClassName('caption1'));
+  let currentImageIndex = 0;
+
+  function switchImage() {
+    images[currentImageIndex].style.display = 'none';
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].style.display = 'block';
+  }
+
+  wrappers1[i].addEventListener('mouseenter', function() {
+    texts1[i].style.display = 'block';
+    captions1[0].classList.add('hidden');
+    images[currentImageIndex].style.clipPath = 'url(#mask2)';
+    images[currentImageIndex].style.filter = 'blur(0)';
+  });
+
+  wrappers1[i].addEventListener('mouseleave', function() {
+    texts1[i].style.display = 'none';
+    captions1[0].classList.remove('hidden');
+    images[currentImageIndex].style.clipPath = 'url(#mask1)';
+    images[currentImageIndex].style.filter = 'blur(5px)';
+  });
+
+  wrappers1[i].addEventListener('click', function() {
+    switchImage();
+  });
+}
+
+var wrappers2 = Array.from(document.getElementsByClassName('wrapper2'));
+var texts2 = Array.from(document.getElementsByClassName('text2'));
+
+for (let i = 0; i < wrappers2.length; i++) {
+  let imageContainers = Array.from(wrappers2[i].getElementsByClassName('image-container2'));
+  let images = Array.from(imageContainers[0].getElementsByClassName('gallery-image2'));
+  let currentImageIndex = 0;
+  let captions2 = Array.from(imageContainers[0].getElementsByClassName('caption2'));
+
+  function switchImage() {
+    images[currentImageIndex].style.display = 'none';
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].style.display = 'block';
+  }
+
+  wrappers2[i].addEventListener('mouseover', function() {
+    texts2[i].style.display = 'block';
+    captions2[0].classList.add('hidden');
+    images[currentImageIndex].style.clipPath = 'url(#mask4)';
+    images[currentImageIndex].style.filter = 'blur(0)';
+  });
+
+  wrappers2[i].addEventListener('mouseout', function() {
+    texts2[i].style.display = 'none';
+    captions2[0].classList.remove('hidden');
+    images[currentImageIndex].style.clipPath = 'url(#mask3)';
+    images[currentImageIndex].style.filter = 'blur(5px)';
+  });
+
+  wrappers2[i].addEventListener('click', function() {
+    switchImage();
+  });
+}
+
+function changeImage1() {
+  var image = document.getElementById('cart1');
+  if (image.src.match("tocart")) {
+      image.src = "incart.svg";
+  } else {
+      image.src = "tocart.svg";
+  }
+}
+
+function changeImage2() {
+  var image = document.getElementById('cart2');
+  if (image.src.match("tocart")) {
+      image.src = "incart.svg";
+  } else {
+      image.src = "tocart.svg";
+  }
+}
+
+</script>
+</body>
