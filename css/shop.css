@@ -1,28 +1,24 @@
-.image-container, .image-container2 {
-  width: 30%;
-  height: 35.595vw;
-  position: relative;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+    margin-right: 5vw;
 }
-.image-container2 {
-  width: 49%;
-}
+
 
 .image-container {
   margin-top: 3vw;
-  /* max-width: 215px; /* Размер исходного изображения */ */
-  height: auto;heightheightheightheightheightheightheightheightheightheight
+    height: 41.667vw;
+    width: 29.762vw;
+
 }
 
-.image-container2 {
-  margin-top: 2.976vw;
-  left: 47.619vw;
-}
 
 .gallery-image, .gallery-image2 {
   transition: -webkit-clip-path 1s ease-in-out;
   transition: clip-path 1s ease-in-out;
   transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
-  filter: blur(5px);
+  filter: blur(1px);
   transition: filter 0.3s ease;
 }
 
@@ -37,66 +33,34 @@
   filter: blur(0);
 }
 
-.gallery-image2 {
-  -webkit-clip-path: url(#mask3);
-  clip-path: url(#mask3);
-}
-
-.image-container2:hover .gallery-image2 {
-  -webkit-clip-path: url(#mask4);
-  clip-path: url(#mask4);
-  filter: blur(0);
-}
-
-.text, .text2 {
-  position: absolute;
-  width: 19.821vw;
-  font-size: 2rem;
-  letter-spacing: -0.07em;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 .text {
-
-  margin-top: -36.667vw;
-  margin-left: 54.167vw;
+    display: flex;
+  position: relative;
+  height: 39.881vw;
+  width: 13.690vw;
+  font-size: 2em;
+  letter-spacing: -0.07em;
+  color: white;
+  margin-top: 3vw;
+  flex-direction: column;
+  justify-content: space-between;
+   margin-left: 1.190vw;
+   opacity: 0;
+   transition: opacity 0.3s ease;
 }
 
-.text2 {
-  margin-top: -29.762vw;
-  margin-left: -47.619vw;
-  width: 19.821vw;
-}
 
 .price {
   position: absolute;
   top: 2.1vh;
   left: 13.095vw;
 }
-
-.description {
-  margin-top: 9.524vw;
-}
-
-.wrapper1 img, .wrapper2 img {
-  position: absolute;
-  top: 14.167vw;
-  cursor: url('../cursor3.png') 32 32, auto;
-}
-
-.caption, .caption2 {
+.caption {
   font-size: 2rem;
   letter-spacing: -0.07em;
   color: white;
   margin-top: 2.1vh;
-}
-
-.caption2 {
-  margin-left: 40.476vw;
-  width: 5.952vw;
 }
 
 .caption.hidden {
@@ -104,4 +68,12 @@
 }
 .logo {
   top: 50vh;
+}
+.wrappers{
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-start;
+  width: 93%;
+  height: 47.619vw;
+
 }
