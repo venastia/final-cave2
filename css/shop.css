@@ -2,19 +2,17 @@
   display: flex;
   justify-content: space-between;
   width: 50%;
-    margin-right: 5vw;
+  margin-right: 5vw;
 }
-
 
 .image-container {
   margin-top: 3vw;
-    height: 41.667vw;
-    width: 29.762vw;
-
+  height: 41.667vw;
+  width: 29.762vw;
 }
 
-
-.gallery-image, .gallery-image2 {
+.gallery-image,
+.gallery-image2 {
   transition: -webkit-clip-path 1s ease-in-out;
   transition: clip-path 1s ease-in-out;
   transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
@@ -33,23 +31,21 @@
   filter: blur(0);
 }
 
-
 .text {
-    display: flex;
+  display: flex;
   position: relative;
   height: 39.881vw;
-  width: 13.690vw;
+  width: 13.69vw;
   font-size: 2em;
   letter-spacing: -0.07em;
   color: white;
   margin-top: 3vw;
   flex-direction: column;
   justify-content: space-between;
-   margin-left: 1.190vw;
-   opacity: 0;
-   transition: opacity 0.3s ease;
+  margin-left: 1.19vw;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-
 
 .price {
   position: absolute;
@@ -69,11 +65,74 @@
 .logo {
   top: 50vh;
 }
-.wrappers{
+
+.wrappers {
   display: flex;
-  justify-content: space-between;
   justify-content: flex-start;
   width: 93%;
   height: 47.619vw;
+}
 
+@media (max-width: 768px) {
+  .wrappers,
+  .wrapper {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .wrappers {
+    align-items: center;
+  }
+
+  .wrapper {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .caption {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .caption p {
+    font-size: 30px;
+  }
+
+  .image-container {
+    width: auto;
+    height: auto;
+  }
+
+  .image-container svg {
+    width: auto;
+  }
+
+  .text {
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .text h1 {
+    grid-column: 1/3;
+    font-size: 30px;
+  }
+
+  .text img {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-top: auto;
+    margin-left: auto;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+
+  .text img {
+    width: 50px;
+  }
 }

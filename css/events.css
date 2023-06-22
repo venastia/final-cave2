@@ -9,21 +9,35 @@
   margin-top: 4vh;
 }
 .carousel {
-position: relative;
-width: 92.857vw;
-height: 41.667vw;
-margin: 0;
-margin-top: 3vw;
-cursor: url('../cursor2.png') 32 32, auto;
+  position: relative;
+  width: 92.857vw;
+  height: 41.667vw;
+  margin: 0;
+  margin-top: 3vw;
+  cursor: url("../cursor2.png") 32 32, auto;
 }
 .carousel img {
-position: absolute;
-width: 29.762vw;
-height: 41.667vw;
+  position: absolute;
+  width: 29.762vw;
+  height: 41.667vw;
 }
 .carousel img {
-transition: filter 1s;
+  transition: filter 1s;
 }
 .carousel img {
-filter: blur(20px);
+  filter: blur(20px);
+}
+
+@media (max-width: 578px) {
+  .carousel {
+    height: 120vw;
+  }
+  .carousel img {
+    width: 100%;
+    height: 120vw;
+  }
+
+  .caption p {
+    font-size: 12px;
+  }
 }

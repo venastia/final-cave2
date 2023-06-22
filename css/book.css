@@ -4,7 +4,7 @@
   height: 40vw;
   margin: 0 auto;
   margin-top: 5.952vw;
-  cursor: url('../cursor2.png') 32 32, auto;
+  cursor: url("../cursor2.png") 32 32, auto;
 }
 
 .image-stack img {
@@ -13,4 +13,11 @@
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .image-stack {
+    margin-top: 120px;
+    width: 80%;
+  }
 }

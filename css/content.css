@@ -1,11 +1,23 @@
-.image-container, .image-container2, .image-container3, .image-container4, .image-container5, .image-container6, .image-container7 {
+.image-container,
+.image-container2,
+.image-container3,
+.image-container4,
+.image-container5,
+.image-container6,
+.image-container7 {
   width: 58.93vw;
   cursor: pointer;
-
 }
 
-.gallery-image, .gallery-image2, .gallery-image3, .gallery-image4, .gallery-image5, .gallery-image6, .gallery-image7 {
-  transition: -webkit-clip-path 1s ease-in-out, clip-path 1s ease-in-out, filter 0.3s ease;
+.gallery-image,
+.gallery-image2,
+.gallery-image3,
+.gallery-image4,
+.gallery-image5,
+.gallery-image6,
+.gallery-image7 {
+  transition: -webkit-clip-path 1s ease-in-out, clip-path 1s ease-in-out,
+    filter 0.3s ease;
   filter: blur(5px);
 }
 
@@ -17,7 +29,7 @@
 .image-container:hover .gallery-image {
   -webkit-clip-path: url(#mask2);
   clip-path: url(#mask2);
-  cursor: url('../cursor2.png') 32 32, auto;
+  cursor: url("../cursor2.png") 32 32, auto;
   filter: blur(0);
 }
 
@@ -29,7 +41,7 @@
 .image-container2:hover .gallery-image2 {
   -webkit-clip-path: url(#mask4);
   clip-path: url(#mask4);
-  cursor: url('../cursor2.png') 32 32, auto;
+  cursor: url("../cursor2.png") 32 32, auto;
   filter: blur(0);
 }
 
@@ -41,7 +53,7 @@
 .image-container3:hover .gallery-image3 {
   -webkit-clip-path: url(#mask6);
   clip-path: url(#mask6);
-  cursor: url('../cursor2.png') 32 32, auto;
+  cursor: url("../cursor2.png") 32 32, auto;
   filter: blur(0);
 }
 
@@ -53,7 +65,7 @@
 .image-container4:hover .gallery-image4 {
   -webkit-clip-path: url(#mask8);
   clip-path: url(#mask8);
-  cursor: url('../cursor2.png') 32 32, auto;
+  cursor: url("../cursor2.png") 32 32, auto;
   filter: blur(0);
 }
 
@@ -65,7 +77,7 @@
 .image-container5:hover .gallery-image5 {
   -webkit-clip-path: url(#mask10);
   clip-path: url(#mask10);
-  cursor: url('../cursor2.png') 32 32, auto;
+  cursor: url("../cursor2.png") 32 32, auto;
   filter: blur(0);
 }
 
@@ -77,7 +89,7 @@
 .image-container6:hover .gallery-image6 {
   -webkit-clip-path: url(#mask12);
   clip-path: url(#mask12);
-  cursor: url('../cursor2.png') 32 32, auto;
+  cursor: url("../cursor2.png") 32 32, auto;
   filter: blur(0);
 }
 .gallery-image7 {
@@ -88,16 +100,28 @@
 .image-container7:hover .gallery-image7 {
   -webkit-clip-path: url(#mask14);
   clip-path: url(#mask14);
-  cursor: url('../cursor2.png') 32 32, auto;
+  cursor: url("../cursor2.png") 32 32, auto;
   filter: blur(0);
 }
 
-.text, .text2, .text3, .text4, .text5, .text6, .text7 {
+.text,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7 {
   width: 28.93vw;
-    position: relative;
+  position: relative;
 }
 
-.text p, .text2 p, .text3 p, .text4 p, .text5 p, .text6 p, .text7 p {
+.text p,
+.text2 p,
+.text3 p,
+.text4 p,
+.text5 p,
+.text6 p,
+.text7 p {
   font-size: 2rem;
   letter-spacing: -0.07em;
   color: white;
@@ -165,27 +189,36 @@
   width: 100%;
   height: 43.393vw;
 }
-.gallery-image, .gallery-image2, .gallery-image3, .gallery-image4, .gallery-image5, .gallery-image6, .gallery-image7 {
-  transition: -webkit-clip-path 1s ease-in-out, clip-path 1s ease-in-out, filter 0.3s ease;
+.gallery-image,
+.gallery-image2,
+.gallery-image3,
+.gallery-image4,
+.gallery-image5,
+.gallery-image6,
+.gallery-image7 {
+  transition: -webkit-clip-path 1s ease-in-out, clip-path 1s ease-in-out,
+    filter 0.3s ease;
   filter: blur(5px);
 }
 
-.text p, .text2 p, .text3 p, .text4 p, .text5 p, .text6 p, .text7 p {
+.text p,
+.text2 p,
+.text3 p,
+.text4 p,
+.text5 p,
+.text6 p,
+.text7 p {
   font-size: 2rem;
   letter-spacing: -0.07em;
   color: white;
 }
-
-
-
-
 
 .order {
   width: 12.56vw;
   height: 7.3vh;
   background-color: white;
   display: block;
-  padding:1.5vh 3.1vw 1.5vh 3.57vw;
+  padding: 1.5vh 3.1vw 1.5vh 3.57vw;
   position: fixed;
   bottom: 5vh;
 }
@@ -212,7 +245,9 @@
   box-sizing: border-box;
 }
 
-.form h1, .order h1, .order a {
+.form h1,
+.order h1,
+.order a {
   color: #101027;
 }
 
@@ -233,7 +268,7 @@ input[type="text"] {
   font-size: 2rem;
   color: #101027;
   padding-left: 0.6vw;
-  height:6vh;
+  height: 6vh;
   outline: none;
 }
 
@@ -249,13 +284,14 @@ input[type="submit"] {
   font-size: 4rem;
   border: none;
   letter-spacing: -0.085em;
-  cursor: url('../cursor3.png') 32 32, auto;
+  cursor: url("../cursor3.png") 32 32, auto;
   width: 30%;
   padding: 1.6vh 2vw;
   margin: 0.8vh 0;
 }
 
-.input-container, .input-container-vertical {
+.input-container,
+.input-container-vertical {
   align-items: center;
   margin-bottom: 1vh;
   border-bottom: 2px solid #101027;
@@ -272,7 +308,9 @@ input[type="submit"] {
   align-items: flex-start;
 }
 
-.input-container label, .input-container input, textarea#more {
+.input-container label,
+.input-container input,
+textarea#more {
   font-size: 4rem;
   letter-spacing: -0.085em;
   color: #101027;
@@ -280,7 +318,7 @@ input[type="submit"] {
 
 .input-container label {
   margin-right: 1vh;
-  color: #AED9F4;
+  color: #aed9f4;
 }
 
 .input-container input {
@@ -313,7 +351,7 @@ textarea#more {
 
 #full_form {
   margin-top: 7vw;
-  cursor: url('../cursor3.png') 32 32, auto;
+  cursor: url("../cursor3.png") 32 32, auto;
 }
 
 body.form_open {
@@ -338,5 +376,120 @@ body.form_open {
   width: 60%;
 }
 .form svg {
-  cursor: url('../cursor3.png') 32 32, auto;
+  cursor: url("../cursor3.png") 32 32, auto;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .wrapper:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .image-container-block {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .text-block {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+
+  .text-block > * {
+    flex-basis: 50%;
+  }
+
+  .text-block h1 {
+    font-size: 21px;
+  }
+
+  .text-block p {
+    font-size: 9px;
+  }
+
+  #form {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11000;
+    transform: none;
+  }
+
+  .form_content {
+    width: auto;
+    margin: 0;
+    background-color: #0b0b1d;
+  }
+
+  #form svg,
+  #form svg rect {
+    fill: #fff;
+  }
+
+  #form svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .input-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .input-container label {
+    position: absolute;
+    z-index: 2;
+  }
+
+  #form input {
+    padding: 30px 5px;
+  }
+
+  .input-container input:not(:placeholder-shown),
+  .input-container textarea:not(:placeholder-shown) {
+    position: relative;
+    z-index: 13000;
+  }
+
+  .form {
+    background: #0b0b1d;
+  }
+
+  .form h1 {
+    color: #fff;
+    font-size: 21px;
+    max-width: 247px;
+  }
+
+  .form textarea {
+    min-height: 150px;
+  }
+
+  #form [type="text"],
+  #form textarea {
+    width: 100%;
+    background-color: #0b0b1d;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+  }
+
+  #form [type="submit"] {
+    background-color: #fff;
+    color: #000;
+    padding: 5px 85px;
+    width: auto;
+  }
+
+  .order {
+    width: auto;
+    height: auto;
+    padding: 5px 30px;
+  }
 }
