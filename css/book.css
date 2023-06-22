@@ -18,6 +18,11 @@
 @media (max-width: 768px) {
   .image-stack {
     margin-top: 120px;
-    width: 80%;
+    width: 90%;
+    height: 65vw;
   }
+  .bottom_line {
+    margin-top: 12vh;
+  }
+}
 }

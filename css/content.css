@@ -386,6 +386,12 @@ body.form_open {
     padding-bottom: 30px;
   }
 
+.bottom_line {
+  margin-top: 1vh;
+}
+.bottom {
+  margin-top: -9vw;
+}
   .wrapper:nth-child(even) {
     flex-direction: column-reverse;
   }
@@ -406,7 +412,7 @@ body.form_open {
   }
 
   .text-block h1 {
-    font-size: 21px;
+    font-size: 4rem;
   }
 
   .text-block p {
@@ -450,6 +456,11 @@ body.form_open {
 
   #form input {
     padding: 30px 5px;
+  }
+
+  .input-container input:not(:-moz-placeholder-shown), .input-container textarea:not(:-moz-placeholder-shown) {
+    position: relative;
+    z-index: 13000;
   }
 
   .input-container input:not(:placeholder-shown),
