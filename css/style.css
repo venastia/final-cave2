@@ -145,3 +145,8 @@ a:hover {
   transform: rotate(-45deg);
   transition: transform 200ms ease-in-out;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+.text2 p, .text3 p, .text p, .text4 p, .text5 p, .text6 p, .text7 p{
+  font-size: 2rem;
+}
+}
