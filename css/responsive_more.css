@@ -236,6 +236,9 @@ margin-top: 100px;
   .menu h1 {
     font-size: 73px;
   }
+  .menu {
+    margin: 0px;
+  }
 /* анимации */
   @keyframes tophouses-move {
     0% {margin-left: -288.015vw;}
