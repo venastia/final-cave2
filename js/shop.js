@@ -104,3 +104,6 @@ $(document).ready(function () {
     });
   });
 });
+$(window).on('load', function() {
+  $('.blur').removeClass('blur');
+});

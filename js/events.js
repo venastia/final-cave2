@@ -78,3 +78,6 @@ $(document).ready(function () {
 
   carousel.click(rotateImages);
 });
+$(window).on('load', function() {
+  $('.blur').removeClass('blur');
+});

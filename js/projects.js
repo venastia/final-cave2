@@ -256,3 +256,6 @@ $(function() {
     sendButton.val('send');
   });
 });
+$(window).on('load', function() {
+  $('.blur').removeClass('blur');
+});

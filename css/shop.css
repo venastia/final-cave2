@@ -72,7 +72,9 @@
   width: 93%;
   height: 47.619vw;
 }
-
+.blur {
+  filter: blur(5px);
+}
 @media (max-width: 768px) {
   .wrappers,
   .wrapper {

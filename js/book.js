@@ -25,7 +25,6 @@ $(document).ready(function () {
     const xOffset = Math.floor(Math.random() * 50) - 25;
     const yOffset = Math.floor(Math.random() * 50) - 25;
 
-    // Apply offsets
     $(img).css({
       top: `calc(50% + ${yOffset}px)`,
       left: `calc(50% + ${xOffset}px)`,
@@ -43,4 +42,7 @@ $(document).ready(function () {
       $(this).css("z-index", -1);
     });
   });
+});
+$(window).on('load', function() {
+  $('.blur').removeClass('blur');
 });
